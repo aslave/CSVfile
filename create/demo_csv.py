@@ -2,7 +2,7 @@ import csv
 
 date = []
 
-def tranform_row(row):
+def demo_row(row):
   EMP_ID = line[0]
   EMP_NAME = int(line[1])
   Experience = line[2]
@@ -26,15 +26,15 @@ with open('team.csv','rb') as f:
      header = reader.next()
      for line in reader:
         if not line: continue 
-        data.append(transform_row(line))
+        data.append(demo_row(line))
 
 #write CSV file
 
 with open('output.csv','w') as f:
      writer = csv.writer(f, delimiter=',')
      writer.writerow([
-     'EMPID',
-     'EMPNAME',
+     'EMP_ID',
+     'EMP_NAME',
      'Experience',
      None,
 
