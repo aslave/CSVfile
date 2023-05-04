@@ -1,6 +1,6 @@
 import csv
 
-date = []
+data = []
 
 def demo_row(row):
   EMP_ID = line[0]
